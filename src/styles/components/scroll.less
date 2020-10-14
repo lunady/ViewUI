@@ -13,14 +13,18 @@
 	}
 
     @keyframes ani-stop-slide {
+        from {
+            overflow-y: hidden;
+            tansform:translateZ(0)
+        }
         to {
             overflow-y: scroll;
+            tansform:translateZ(0)
         }
     }
 
     &-container-loading {
-        overflow-y: hidden;
-        animation: ani-stop-slide 1.2s;
+        animation: ani-stop-slide 1.5s;
     }
 
 	&-content {
