@@ -13,16 +13,14 @@
 	}
 
     @keyframes ani-stop-slide {
-        from {
-            overflow-y: hidden;
-        }
         to {
             overflow-y: scroll;
         }
     }
 
     &-container-loading {
-        animation: ani-stop-slide 1s;
+        overflow-y: hidden;
+        animation: ani-stop-slide 1.2s;
     }
 
 	&-content {
